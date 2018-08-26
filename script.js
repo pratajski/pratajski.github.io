@@ -1,6 +1,6 @@
 $(document).ready(function() {
   const apiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/task/';
-  const trelloApiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/trello/';
+  const trelloApiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/trello/getTrelloBoards';
   
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
