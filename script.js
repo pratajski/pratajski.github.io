@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  const apiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/task/getTasks';
-  const trelloApiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/task';
+  const apiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/task';
+  const trelloApiRoot = 'https://tranquil-stream-76187.herokuapp.com/v1/trello/';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
@@ -206,3 +206,4 @@ $(document).ready(function() {
   $tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
   $tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
 });
+
